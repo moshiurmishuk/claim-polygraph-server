@@ -7,7 +7,7 @@ from app.api.api_v1.api import api_router
 
 from app.db.session import engine
 from app.db.base import Base
-from app.models import user  # noqa: F401  (ensures model is registered)
+from app.models import user
 
 def create_app() -> FastAPI:
     configure_logging()
